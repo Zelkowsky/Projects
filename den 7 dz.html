@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menu {
+            position: fixed; /* Фиксированное положение */
+            right: 10px; /* Расстояние от правого края окна браузера */
+            top: 20%; /* Расстояние сверху */
+            padding: 10px; /* Поля вокруг текста */
+            background: #ffe; /* Цвет фона */
+            border: 1px solid #333; /* Параметры рамки */
+        }
+        .text {
+            height: 1000px;
+        }
+        INPUT.text {
+            border: 10px solid red; /* Исходная рамка вокруг поля */
+            width: 100px; /* Ширина поля */
+            height: 100px;
+        }
+        .focus {
+            border: 1px solid #39c; /* Рамка при получении фокуса */
+            width: 200px; /* Ширина поля */
+            height:150px ;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%) }
+
+    </style>
+    <link rel="stylesheet" href="styles/styles dzzzz 7.css">
+</head>
+<body>
+<div id="home">
+    <a href="index.html">HOME</a>
+</div>
+<div class="grow" id="rectangle"></div>
+<div class="menu">Здарова</div>
+<div class="text"></div>
+<form action="">
+    <p><input  type="text" size="30" class="text"
+               onfocus="this.className='focus'" onblur="this.className='text'" /></p>
+</form>
+<div class="wrap">
+    <div class="route">
+        <img class="plane" src="http://p36099-290-14699.s290.upress.link/wp-content/uploads/2020/05/plane.png">
+    </div>
+</div>
+<div class="demo">
+    <label class="container">Оладьи
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Оладьи
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Оладьи
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Оладьи
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <div class="growsandstays">ОЛАДЬИ НА ВСЮ СТРАНИЦУ1!</div>
+</div>
+<div id="progress-bar-container">
+    <div class="progress-bar-child progress"></div>
+    <div class="progress-bar-child shrinker timelapse"></div>
+</div>
+
+
+</body>
+</html>

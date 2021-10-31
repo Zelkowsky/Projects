@@ -1,0 +1,15 @@
+textarea{
+    resize: both;
+    height:200px;
+    width:400px;
+    margin:20px;
+}
+textarea.horizont{
+    resize: horizontal;
+}
+textarea.vertica{
+    resize: vertical;
+}
+textarea.none{
+    resize: none;
+}

@@ -86,7 +86,7 @@ alert(result1)
 let str1='30';
 
 
-console.log(!Boolean(str1));
+console.log(!Boolean(str1))
 
 
 

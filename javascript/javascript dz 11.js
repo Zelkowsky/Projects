@@ -71,6 +71,10 @@ if (booksCount > 15) {
 alert(result)
 
 
+const A = 201;
+console.log(`${A % 2 === 0 ? "even" : "odd"}`);
+
+
 let password = prompt('Введите пароль(19532)');
 let result1;
 

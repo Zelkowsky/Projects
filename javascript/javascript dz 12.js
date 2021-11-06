@@ -51,11 +51,7 @@ alert( sum3(10, 2) );
 
 
 
-var nameString = function (name) {
-    return "Здравствуйте" + " " + name+".";
-
-}
-console.log(nameString("Гость"))
+let helloFunc = (name = 'гость') => { console.log(`Здравствуйте, ${name}!`) };
 
 
 

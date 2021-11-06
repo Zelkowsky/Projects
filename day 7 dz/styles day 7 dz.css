@@ -1,0 +1,241 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-align: center;
+    margin: 35px 0;
+}
+
+.anim-block {
+    width: 250px;
+    height: 200px;
+    border-radius: 1em;
+    background-color: #c50010;
+    margin: 25px auto;
+    transition: background-color 1s;
+    cursor: pointer;
+    color: aliceblue;
+    padding: .7em 1em;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.anim-block p {
+    margin: 0;
+    transition: color 1s;
+    transition-delay: 1s;
+}
+
+.anim-block:hover {
+    background-color: #2424e7;
+    color: #e0062d;
+}
+
+.growing-block {
+    width: 100px;
+    height: 100px;
+    background-color: #113aa1;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 3s;
+}
+
+.growing-block:hover {
+    width: 200vw;
+    height: 200vh;
+}
+
+.sticky-block {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: #51c914;
+    position: sticky;
+    top: 50px;
+    z-index: 2;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 10px;
+    background-color:white;
+    width: 200px;
+    margin: 35px auto;
+    z-index: 2;
+}
+
+section {
+    margin: 0 auto;
+    width: 30vw;
+}
+
+section p {
+    font-size: 1.3rem;
+}
+
+.big-input {
+    margin: 0 20px;
+    border-radius: 15px;
+    transition: 3s;
+}
+
+.big-input:focus {
+    transform: scale(2, 1.5) translateX(200%);
+    margin: 0;
+}
+
+.loading {
+    margin: 40px 0;
+}
+
+#progress-bar-container {
+    width: 600px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.progress-bar-child {
+    width: 100%;
+    height: 100%;
+}
+
+.progress {
+    background: linear-gradient(to right, #7fec01 0%, #326503 45%, #c4ff00 100%);
+}
+
+.shrinker {
+    background-color: #293034;
+    box-shadow: inset 3px 3px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.timelapse {
+    animation-name: timelapse;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.86, .05, .4, .96);
+    animation-iteration-count: 3;
+}
+
+@keyframes timelapse {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.container {
+    margin: 75px auto;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    animation: rotating 3.5s linear infinite;
+}
+
+.crazy-plane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(370deg);
+    }
+}
+
+.stretch-block {
+    width: 200px;
+    height: 100px;
+    background-color: #c4ff00;
+    animation-name: stretching;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+div .check {
+    height: 25px;
+    width: 25px;
+    margin: 0 25px;
+}
+
+div .check:checked + div {
+    animation-play-state: running;
+}
+
+@keyframes stretching {
+    0% {
+        width: 150px;
+    }
+    100% {
+        width: 100vw;
+    }
+}
+
+.square {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    background-color: #2424e7;
+    margin: 100px auto;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    top: -60px;
+    left: 0;
+    position: absolute;
+    background-color: #c50010;
+    border-radius: 50%;
+    animation: moving 5s;
+}
+
+
+@keyframes moving {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(250px, 0);
+    }
+    50% {
+        transform: translate(250px, 310px);
+    }
+    75% {
+        transform: translate(-60px, 310px);
+    }
+    100% {
+        transform: translate(-60px, 0);
+    }
+}
+
+

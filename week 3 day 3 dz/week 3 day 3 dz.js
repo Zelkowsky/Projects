@@ -137,14 +137,14 @@ alert( curriedSum(5)(5) );
 
 //1
 
-// var obj = new Object({a : 'a' , b : 'b' , c : 'c'});
-//
-// alert(obj['a']);
-// alert(obj.a);
-// alert(obj['b']);
-// alert(obj.b);
-// alert(obj['c']);
-// alert(obj.c);
+var obj10 = new Object({a : 'a' , b : 'b' , c : 'c'});
+
+alert(obj10['a']);
+alert(obj10.a);
+alert(obj10['b']);
+alert(obj10.b);
+alert(obj10['c']);
+alert(obj10.c);
 
 //2
 
@@ -263,16 +263,16 @@ console.table(items);
 
 
 
-// const number2 = [
-//     [1, 2, 3],
-//     [0, 3, 10],
-//     [5, 2, 9]
-// ];
-//
-// console.log(number2[0]);
-// console.log(number2[1]);
+const number2 = [
+    [1, 2, 3],
+    [0, 3, 10],
+    [5, 2, 9]
+];
 
-//12
+console.log(number2[0]);
+console.log(number2[1]);
+
+//11
 
 var arr = [
     ["a" , 0],
@@ -324,7 +324,7 @@ var out1 = Object.keys(ru).map(function (key) {
 });
 
 
-//13
+//12
 
 function clone(obj) {
     if (null == obj || "object" != typeof obj) return obj;
@@ -343,6 +343,13 @@ setTimeout(function(){
     alert("d1 = " + d1.toString() + "\nd2 = " + d2.toString());
 }, 5000);
 
+//13
+
+function sum10(arr) {
+    return arr.reduce(function(total, value) {
+        return total + value;
+    }, 0);
+}
 
 //14
 

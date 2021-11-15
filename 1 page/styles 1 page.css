@@ -1,0 +1,205 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family : 'Nunito' , sans-serif;
+}
+
+header{
+    background-color:  #10376E;
+    height: 120px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 180px;
+
+
+}
+
+.container{
+    flex: 1;
+    background-color: #E5E5E5;
+}
+
+
+footer{
+    height: 166px;
+    background-color: #E1E8F1;
+;
+}
+
+.html_container , .css_container{
+    border: 2px  #CBD3DE solid;
+    flex: 1;
+    padding: 40px;
+    margin: 10px;
+    background-color: white;
+
+
+}
+
+
+.content_container{
+    display: flex;
+    margin: 50px;
+}
+
+.thumbnail{
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.tags_container{
+    border: 2px #CBD3DE solid;
+    margin: 50px;
+    background-color:  #EAEEF4;
+    padding: 24px 57px 48px 30px;
+
+
+}
+
+.tags_container_blocks{
+    display: flex;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tags_block_1, .tags_block_2, .tags_block_3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-underline-offset: 5px;
+
+}
+
+.tag_audio{
+    color: #325689;
+
+
+}
+
+.tag_calc{
+    color: #10376E;
+
+
+}
+
+.tag_forum{
+    color: #1E3351;
+
+}
+
+.tag_settings{
+    color: #3E6499;
+
+
+}
+
+.tag_video{
+    color: #1E3351;
+
+
+}
+
+.tag table{
+    color: #0B1F3A;
+    font-size: 46px;
+    font-weight: normal;
+
+
+}
+
+
+/*header*/
+
+
+.logo-container{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo_button{
+    height: 81px;
+    width: 132px;
+    background-color: #1389E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo_title{
+   align-items: center;
+    display: flex;
+    margin-left: 27px;
+}
+
+
+.title{
+    width: 236px;
+    height: 81px;
+}
+
+
+
+
+.clocks{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1px;
+    margin-right: 1px;
+
+}
+
+
+
+.thumbnail1{
+    height: 33px;
+    width: 33px;
+}
+
+
+.clock_time{
+    font-size: 30px;
+}
+
+
+
+
+
+.username{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.username_button{
+    height: 81px;
+    width: 375px;
+    background-color: #0B264D;
+    display: flex;
+    margin-right: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail2{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin-right: 60px;
+}
+
+
+
+
+
+

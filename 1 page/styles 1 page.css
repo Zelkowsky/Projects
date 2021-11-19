@@ -5,28 +5,10 @@ body{
     font-family : 'Nunito' , sans-serif;
 }
 
-header{
-    background-color:  #10376E;
-    height: 120px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-left: 180px;
-
-
-}
 
 .container{
     flex: 1;
     background-color: #E5E5E5;
-}
-
-
-footer{
-    height: 166px;
-    background-color: #E1E8F1;
 }
 
 .html_container , .css_container{
@@ -107,19 +89,33 @@ footer{
 
 .tag_video{
     color: #1E3351;
-   font-size: 34px;
+    font-size: 34px;
+
 
 
 }
 
-.tag table{
+.tag_table{
     color: #0B1F3A;
-    font-size: 82px;
+    font-size: 70px;
 }
+
+
 
 
 /*header*/
 
+header {
+    background-color: #10376E;
+    height: 120px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 180px;
+
+}
 
 .logo-container{
     flex: 1;
@@ -134,11 +130,14 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 19px;
+    margin-left: 10px;
 }
 
 
 .logo_title{
-   align-items: center;
+    align-items: center;
     display: flex;
     margin-left: 27px;
 }
@@ -146,21 +145,16 @@ footer{
 
 .title{
     width: 236px;
-    height: 81px;
+    height: 66px;
 }
-
-
 
 
 .clocks{
-    flex: 1;
     display: flex;
-    flex-direction: row;
-    margin-left: 1px;
-    margin-right: 1px;
-
+    justify-content: center;
+    align-items: center;
+    margin-right: 25%;
 }
-
 
 
 .thumbnail1{
@@ -168,148 +162,31 @@ footer{
     width: 33px;
 }
 
-
 .clock_time{
-    font-size: 30px;
+    font-size: 35px;
 }
 
-
-
-
-
-.username{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-}
 
 .username_button{
-    height: 81px;
-    width: 375px;
-    background-color: #0B264D;
+    background-color:  #0B264D;
+    height: 80px;
+    width: 320px;
     display: flex;
-    margin-right: 100px;
     justify-content: center;
     align-items: center;
+    margin-right: 100px;
 }
+
 
 .thumbnail2{
     height: 50px;
-    width: 50px;
-    display: flex;
-    margin-right: 60px;
+    margin-right: 20px;
 }
 
 
-
-/*footer*/
-
-footer{
-    background-color: #E1E8F1;
-    height: 166px;
-    width: 1920px;
+.user_name{
     color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-left: 200px;
-
-
-}
-
-/*.logo-container1{*/
-/*    flex: 1;*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*}*/
-
-/*.logo_button1{*/
-/*    height: 69px;*/
-/*    width: 112px;*/
-/*    top: 30px;*/
-/*    left: 180px;*/
-/*    background-color: #1389E6;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
-
-/*.logo_title1 {*/
-/*   */
-/*    margin-left: 27px;*/
-/*}*/
-
-
-.logo-container1{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    width: 1920px;
-    height: 160px;
-}
-
-.logo_button1{
-    height: 69px;
-    width: 112px;
-    background-color: #1389E6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 67px;
-    margin-top: 30px;
-}
-
-
-.logo_title1{
-    align-items: center;
-    display: flex;
-    margin-left: 27px;
-    color: black;
-}
-
-
-.title1{
-    width: 1165px;
-    height: 50px;
-}
-
-
-.button_ok_submit{
-    height: 60px;
-    width: 246px;
-    background-color: #10376E;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*margin-bottom: 67px;*/
-    /*margin-top: 30px;*/
-    margin-top: 17px;
-    margin-left: 100px;
-}
-
-
-.button_ok{
-/*    text-align: center;*/
-/*size: 24px;*/
-/*    line-height: 34px;*/
-/*    font-weight: bold;*/
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    line-height: 33px;
-   margin-top: 15px;
-
-}
-
-
-.agreement{
-    color:  #10376E;
-    margin-top: 46px;
-    text-decoration: underline;
+    font-size: 20px;
 }
 
 
